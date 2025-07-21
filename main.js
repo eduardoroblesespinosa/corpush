@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Do not select locked nodes, but show their info
                 if (!node.classList.contains('locked')) {
                     // Remove active class from all other nodes
-                    mapNodes.forEach(n => n.classList.remove('locked'));
+                    mapNodes.forEach(n => n.classList.remove('active'));
                     // Add active class to the clicked node
                     node.classList.add('active');
                 }
