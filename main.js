@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         try {
-            const response = await fetch(`components/${targetId}.html`);
+            const response = await fetch(`${targetId}.html`);
             if (!response.ok) {
                 throw new Error(`Could not load ${targetId}.html. Status: ${response.status}`);
             }
